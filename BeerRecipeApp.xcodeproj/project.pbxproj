@@ -13,6 +13,7 @@
 		42170AC72A3C48EB00AB3E88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42170AC52A3C48EB00AB3E88 /* Main.storyboard */; };
 		42170AC92A3C48ED00AB3E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42170AC82A3C48ED00AB3E88 /* Assets.xcassets */; };
 		42170ACC2A3C48ED00AB3E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42170ACA2A3C48ED00AB3E88 /* LaunchScreen.storyboard */; };
+		42170ADA2A3C620200AB3E88 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42170AD92A3C620200AB3E88 /* Recipe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		42170AC82A3C48ED00AB3E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		42170ACB2A3C48ED00AB3E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		42170ACD2A3C48ED00AB3E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42170AD92A3C620200AB3E88 /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,64 @@
 		42170ABE2A3C48EB00AB3E88 /* BeerRecipeApp */ = {
 			isa = PBXGroup;
 			children = (
-				42170ABF2A3C48EB00AB3E88 /* AppDelegate.swift */,
-				42170AC12A3C48EB00AB3E88 /* SceneDelegate.swift */,
-				42170AC32A3C48EB00AB3E88 /* ViewController.swift */,
-				42170AC52A3C48EB00AB3E88 /* Main.storyboard */,
-				42170AC82A3C48ED00AB3E88 /* Assets.xcassets */,
-				42170ACA2A3C48ED00AB3E88 /* LaunchScreen.storyboard */,
-				42170ACD2A3C48ED00AB3E88 /* Info.plist */,
+				42170AD82A3C617300AB3E88 /* Models */,
+				42170AD72A3C616300AB3E88 /* Services */,
+				42170AD52A3C493000AB3E88 /* Storyboards */,
+				42170AD42A3C491F00AB3E88 /* ViewControllers */,
+				42170AD62A3C613C00AB3E88 /* Resourses */,
+				42170AD32A3C490B00AB3E88 /* App */,
 			);
 			path = BeerRecipeApp;
+			sourceTree = "<group>";
+		};
+		42170AD32A3C490B00AB3E88 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				42170ABF2A3C48EB00AB3E88 /* AppDelegate.swift */,
+				42170AC12A3C48EB00AB3E88 /* SceneDelegate.swift */,
+				42170ACD2A3C48ED00AB3E88 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		42170AD42A3C491F00AB3E88 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				42170AC32A3C48EB00AB3E88 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		42170AD52A3C493000AB3E88 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				42170ACA2A3C48ED00AB3E88 /* LaunchScreen.storyboard */,
+				42170AC52A3C48EB00AB3E88 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		42170AD62A3C613C00AB3E88 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				42170AC82A3C48ED00AB3E88 /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		42170AD72A3C616300AB3E88 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		42170AD82A3C617300AB3E88 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				42170AD92A3C620200AB3E88 /* Recipe.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +192,7 @@
 				42170AC42A3C48EB00AB3E88 /* ViewController.swift in Sources */,
 				42170AC02A3C48EB00AB3E88 /* AppDelegate.swift in Sources */,
 				42170AC22A3C48EB00AB3E88 /* SceneDelegate.swift in Sources */,
+				42170ADA2A3C620200AB3E88 /* Recipe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,12 +341,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 789XU24GW5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BeerRecipeApp/Info.plist;
+				INFOPLIST_FILE = BeerRecipeApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +354,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = amigoProd.BeerRecipeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,12 +372,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 789XU24GW5;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BeerRecipeApp/Info.plist;
+				INFOPLIST_FILE = BeerRecipeApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +385,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = amigoProd.BeerRecipeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
